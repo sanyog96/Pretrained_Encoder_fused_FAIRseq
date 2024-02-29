@@ -2,7 +2,7 @@ from fairseq.tasks import register_task
 from fairseq.tasks.translation import TranslationTask
 from dictionary_with_bert import DictionaryWithBert
 
-@register_task('translation_with_encoder_model')
+@register_task('translation_with_pretrained_encoder_model')
 class TranslationWithEncoderModelTask(TranslationTask):
     @staticmethod
     def add_args(parser):
